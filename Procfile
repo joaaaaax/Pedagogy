@@ -1,1 +1,1 @@
-web: gunicorn Pedagogy_sitev2.wsgi
+web: gunicorn Pedagogy_site.wsgi
