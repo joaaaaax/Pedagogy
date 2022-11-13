@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Peda',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,8 @@ CSRF_COOKIE_SECURE              = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS  = True
 SECURE_HSTS_SECONDS             = 1000000
 SECURE_FRAME_DENY               = True
+
+AWS_GROUP_NAME = "CPE_User_Group"
+AWS_USERNAME = "waks"
+AWS_ACCESS_KEY_ID = "AKIA4U6BZYMTHYE4DZMJ"
+AWS_SECRET_KEY = "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"
