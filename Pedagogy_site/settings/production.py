@@ -133,7 +133,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media_root")
 
 
-from Pedagogy_site.aws.conf import *
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
