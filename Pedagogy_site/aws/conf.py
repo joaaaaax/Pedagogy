@@ -6,7 +6,7 @@ AWS_ACCESS_KEY_ID = "AKIA4U6BZYMTHYE4DZMJ"
 AWS_SECRET_ACCESS_KEY = "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"
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
-AWS_QUERYSTRING_AUTH = True
+AWS_QUERYSTRING_AUTH = False
 
 DEFAULT_FILE_STORAGE = 'Pedagogy_site.aws.utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'Pedagogy_site.aws.utils.StaticRootS3BotoStorage'
@@ -26,5 +26,3 @@ AWS_HEADERS = {
     'Expires': expires,
     'Cache-Control': 'max-age=%d' % (int(two_months.total_seconds()), ),
 }
-
-AUTH_PASSWORD_VALIDATORS = True
