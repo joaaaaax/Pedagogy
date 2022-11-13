@@ -6,8 +6,8 @@ AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_AUTH = True
 
-DEFAULT_FILE_STORAGE = 'cpektro-bucket.aws.utils.MediaRootS3BotoStorage'
-STATICFILES_STORAGE = 'cpektro-bucket.aws.utils.StaticRootS3BotoStorage'
+DEFAULT_FILE_STORAGE = 'Pedagogy_site.aws.utils.MediaRootS3BotoStorage'
+STATICFILES_STORAGE = 'Pedagogy_site.aws.utils.StaticRootS3BotoStorage'
 AWS_STORAGE_BUCKET_NAME = 'cpektro-bucket'
 S3DIRECT_REGION = 'ap-southeast-1'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
