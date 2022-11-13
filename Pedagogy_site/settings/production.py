@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = 'django-insecure-85q9(u)q33#i*ocy34deoipg-4$1elq4yf@ud-9$*sjbcvc-l8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -132,8 +132,7 @@ STATICFILES_DIRS = [BASE_DIR / "static_my_project",]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media_root")
 
-from Pedagogy_site import *
-
+from Pedagogy_site.aws.conf import *
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
