@@ -57,7 +57,9 @@ ROOT_URLCONF = 'Pedagogy_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,8 +132,7 @@ STATICFILES_DIRS = [BASE_DIR / "static_my_project",]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media_root")
 
-from Pedagogy_site.aws.conf import *
-
+from Pedagogy_site import *
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
